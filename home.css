@@ -1,0 +1,48 @@
+#svgHeader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 700px;
+  max-height: 700px;
+
+}
+
+path {
+  stroke: #fff;
+  fill: #fff;
+  stroke-dasharray: 700;
+  opacity: 1;
+  animation: svgHeaderAnimate 9s cubic-bezier(0,0,.83,.67);
+}
+
+@keyframes svgHeaderAnimate {
+    0% {
+      opacity: 0;
+      fill: none;
+      stroke-dashoffset: 1000;
+    }
+
+    15% {
+      opacity: 0;
+      fill: none;
+      stroke-dashoffset: 1000;
+    }
+
+    20% {
+      opacity: 0.9;
+      fill: none;
+      stroke-dashoffset: 1000;
+    }
+
+    85% {
+      fill: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+      opacity: .9;
+      fill: rgba(255, 255, 255, 1);
+      stroke-dasharray: 1936;
+    }
+}
