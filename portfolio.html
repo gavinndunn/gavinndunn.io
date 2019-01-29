@@ -25,24 +25,34 @@
    
         <body class="text-center" data-gr-c-s-loaded="true">
 
-            <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <div class="cover-container p-3 mx-auto flex-column">
               <header class="masthead mb-auto">
                 <div id="highTide">
-				  <h3 class="masthead-brand">Cover</h3>
+				  <h3 class="masthead-brand" id="fadeIn">Cover</h3>
                   <nav class="nav nav-masthead justify-content-center">
-                    <a class="nav-link active" href="#">Portfolio</a>
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link active" id="fadeIn" href="#">Portfolio</a>
+                    <a class="nav-link" id="fadeIn" href="contact.html">Contact</a>
                   </nav>
                 </div>
-              </header>
-        
-              
-                <h1 class="cover-heading">Check out some of my work!</h1>
+			  </header>
+			  
+			  <div id="spacer">
+					<!--This just spaces out the tiled section below, so the user has to scroll -->
+				</div>
+			  <!--Banner Section-->
+			  
+			  <div class="banner" id="fadeInSlow">
+
+			  </div>
+
+			  <div id="background">  
+                <h1 class="cover-heading" id="fadeInSlow">Check out some of my work!</h1>
           
-        
-        <!--GRID-->
+			</div>
+		<!--GRID-->
+		
 			<section class="grid3d vertical" id="grid3d">
-				<div class="grid-wrap">
+				<div class="grid-wrap" id="fadeInSlow">
 					<div class="grid">
 						<figure><img src="img/1.jpg" alt="img01"/></figure>
 						<figure><img src="img/5.jpg" alt="img05"/></figure>
@@ -105,9 +115,9 @@
 					<span class="loading"></span>
 					<span class="icon close-content"></span>
 			</section>
-			<section>
-				<p>Illustrations by <a href="https://www.behance.net/AdamQuest">Adam Quest</a></p>
-			</section>
+			</div>
+			
+	
         <script src="libraries/gridEffect/classie.js"></script>
         <script src="libraries/gridEffect/helper.js"></script>
         <script src="libraries/gridEffect/grid3d.js"></script>

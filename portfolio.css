@@ -1,3 +1,31 @@
+/*
+* Animations
+*/
+
+@keyframes backgroundAnimate {
+  0% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: #333;
+  }
+}
+
+@keyframes contentFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /*
  * Base structure
@@ -12,11 +40,11 @@ body {
 body {
   display: -ms-flexbox;
   display: flex;
-  color: #333;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-  background-image: url('https://www.colorhexa.com/333333.png');
-  background-repeat: repeat;
+}
+
+.text-center {
+  background-color: #333;
+  animation: backgroundAnimate 6s;
 }
 
 .cover-container {
@@ -29,6 +57,9 @@ body {
  */
 .masthead {
   margin-bottom: 2rem;
+  z-index: 2;
+  top:10px;
+  position: sticky;
 }
 
 .masthead-brand {
@@ -88,6 +119,7 @@ body {
 
 .cover-heading {
     color: white;
+    z-index: 2;
 }
 
 .lead {
@@ -104,4 +136,40 @@ body {
 
 .nav-link {
   font-size: 25px;
+}
+
+#fadeIn {
+  animation: contentFadeIn 3s;
+}
+
+#fadeInSlow {
+  animation: contentFadeIn 6.5s;
+}
+
+.banner {
+  height: 80%;
+  width:100%;
+  background-image: url('img/ProfilePic.jpg');
+  background-size: cover;
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#spacer {
+  height: 110%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+#background {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 3;
 }
