@@ -28,12 +28,12 @@ body {
 
 .grid figure,
 .grid .placeholder {
-	width: 340px;
-	height: 300px;
+	width: 500px;
+	height: 500px;
 }
 
 .grid figure {
-	margin: 10px;
+	margin: 40px;
 	display: inline-block;
 	cursor: pointer;
 	-webkit-touch-callout: none;
@@ -248,7 +248,26 @@ p.dummy-text:nth-child(3) {
 
 .dummy-img {
 	height: 400px;
-	background-color: #ddd;
+	background-image: url('../../img/Landscapes/Compressed/DSC01305-min.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 30px auto;
+}
+
+
+.dummy-img2 {
+	height: 400px;
+	background-image: url('../../img/Landscapes/Compressed/DSC03540-2-min.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 30px auto;
+}
+
+.dummy-img3 {
+	height: 400px;
+	background-image: url('../../img/Landscapes/Compressed/DSC04658-min.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
 	margin: 30px auto;
 }
 
@@ -301,7 +320,7 @@ p.dummy-text:nth-child(3) {
 
 	.grid figure,
 	.grid .placeholder {
-		width: 240px;
-		height: 212px;
+		width: 400px;
+		height: 400px;
 
 }
