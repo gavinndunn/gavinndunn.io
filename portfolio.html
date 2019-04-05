@@ -28,7 +28,7 @@
             <div class="cover-container p-3 mx-auto flex-column">
               <header class="masthead mb-auto">
                 <div id="highTide">
-				  <h3 class="masthead-brand" id="fadeIn">Cover</h3>
+				  <h3 class="masthead-brand" id="fadeIn">Gavindunn.info</h3>
                   <nav class="nav nav-masthead justify-content-center">
                     <a class="nav-link active" id="fadeIn" href="#">Portfolio</a>
                     <a class="nav-link" id="fadeIn" href="contact.html">Contact</a>
@@ -44,12 +44,12 @@
 				</div>
 			  <!--Banner Section-->
 			  
-			  <div class="banner" id="fadeInSlow">
+			  <div class="banner" id="fadeIn">
 
 			  </div>
 
 			  <div id="background">  
-                <h1 class="cover-heading" id="fadeInSlow"><div id="highTide">CHECK &nbsp OUT &nbsp MY &nbsp WORK</div></h1>
+                <h1 class="cover-heading" id=""><div id="highTide">CHECK &nbsp OUT &nbsp MY &nbsp WORK</div></h1>
           
 			</div>
 		<!--GRID-->
@@ -83,16 +83,66 @@
 					<span class="icon close-content"></span>
 			</section>
 			</div>
-			
+
+
+			<!--The about section that shows when user scrolls-->
+
+			<div class="aboutSection">
+					<h2 class="aboutHeader" id="highTide">
+							About Me
+						</h2>
+				<div class="aboutContainer">
+
+					<div class="leftSide">
+						<img src="img/circleProfilePic.png" height="275px" width="275px"/>
+					</div>
+					<div class="rightSide">
+						<p>My name is Gavin Dunn and I am a student at the University of Arkansas. Currently, I hold positions as photographer for the New Student and Family Programs on campus, as well as being a production assistant for the SEC Network. I am still looking to grow my portfolio with new opportunities of different types.</p>
+					</div>
+					</div>
+			</div>
+
+			<!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Portfolio</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Contact Me</a></li>
+					</ul>
+				</div>
+
+				<div class="container">
+					<a href="https://www.instagram.com/gdunnphotos/"><img src="img/Social Media Icon Pack/png/instagramDark.png"/></a>
+					<a href="https://twitter.com/GavinnDunn"><img src="img/Social Media Icon Pack/png/twitterDark.png"/></a>
+					<img src="img/Social Media Icon Pack/png/tumblrDark.png"/>
+				</div>
+
+				<!--Credit where credit due-->
+
+				<div id="credit">Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	</section>
+	<!-- ./Footer -->
 	
         <script src="libraries/gridEffect/classie.js"></script>
         <script src="libraries/gridEffect/helper.js"></script>
         <script src="libraries/gridEffect/grid3d.js"></script>
         <script>
             new grid3D( document.getElementById( 'grid3d' ) );
-        </script>
+				</script>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		<!--Custom HTML for changing CSS on scroll-->
+		<script>
+				window.onbeforeunload = function () {
+  				window.scrollTo(0, 0);
+				}
+		</script>
+		<script src="js/portfolioParallaxEffect.js"></script>
+		<script src="js/mobileOptimizationPortfolio.js"></script>
 	</body>
     </html>

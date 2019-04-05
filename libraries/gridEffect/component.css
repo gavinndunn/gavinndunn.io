@@ -26,12 +26,6 @@ body {
 	transform: translateZ(-1500px);
 }
 
-.grid figure,
-.grid .placeholder {
-	width: 500px;
-	height: 500px;
-}
-
 .grid figure {
 	margin: 40px;
 	display: inline-block;
@@ -318,9 +312,3 @@ p.dummy-text:nth-child(3) {
 }
 
 
-	.grid figure,
-	.grid .placeholder {
-		width: 400px;
-		height: 400px;
-
-}
